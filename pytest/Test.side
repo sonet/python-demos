@@ -1,0 +1,100 @@
+{
+  "id": "55c23688-1f46-4d9d-97b4-3e5822c19a0b",
+  "version": "2.0",
+  "name": "Test",
+  "url": "https://news.northwestern.edu",
+  "tests": [{
+    "id": "4d8521e2-f1e2-4c6a-a202-e23c905f18a7",
+    "name": "Test Expert Search",
+    "commands": [{
+      "id": "5d4f9de5-7732-4a66-b4bd-5cbc8679a3c2",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6e5c059b-f824-4894-aca8-f9825d3cba20",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "903x759",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e7e72a6a-65ae-4997-9507-39d14d015b57",
+      "comment": "",
+      "command": "click",
+      "target": "css=#global-links a",
+      "targets": [
+        ["css=#global-links a", "css:finder"],
+        ["xpath=//a[contains(text(),'For Journalists')]", "xpath:link"],
+        ["xpath=//nav[@id='global-links']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/for-journalists')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ec8567c4-a38a-4ba2-aec0-4c42e622ff5e",
+      "comment": "",
+      "command": "click",
+      "target": "id=searchbox",
+      "targets": [
+        ["id=searchbox", "id"],
+        ["name=search", "name"],
+        ["css=#searchbox", "css:finder"],
+        ["xpath=//input[@id='searchbox']", "xpath:attributes"],
+        ["xpath=//form[@id='home-search-form']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "89d9826c-5364-4e59-9b7e-ab8a6bf56a92",
+      "comment": "",
+      "command": "type",
+      "target": "id=searchbox",
+      "targets": [
+        ["id=searchbox", "id"],
+        ["name=search", "name"],
+        ["css=#searchbox", "css:finder"],
+        ["xpath=//input[@id='searchbox']", "xpath:attributes"],
+        ["xpath=//form[@id='home-search-form']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "nano"
+    }, {
+      "id": "8d31080d-c161-466c-b324-561af8525cdc",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='home-search-form']/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "df43c314-684d-43e9-b80e-6ac4f4ad680e",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#results-focus > span",
+      "targets": [
+        ["css=#results-focus > span", "css:finder"],
+        ["xpath=//div[@id='results-focus']/span", "xpath:idRelative"],
+        ["xpath=//div[3]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Nano')]", "xpath:innerText"]
+      ],
+      "value": "Nano"
+    }]
+  }],
+  "suites": [{
+    "id": "90180e05-bae3-48c1-a0e9-d1c648b22be4",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["4d8521e2-f1e2-4c6a-a202-e23c905f18a7"]
+  }],
+  "urls": ["https://news.northwestern.edu/"],
+  "plugins": []
+}

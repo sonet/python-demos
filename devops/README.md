@@ -12,8 +12,8 @@ Build out python project scaffold:
 
 * Makefile
 * requirements.txt
-* test_library
-* python_library
+* test_library.py
+* python_library.py
 * Dockerfile
 * command-line-tool
 * Microservice

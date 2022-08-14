@@ -8,10 +8,10 @@ Create development environment that is cloud-based
 
 ### Github Codespaces
 
-Build out python project scaffold
+Build out python project scaffold:
 
 * Makefile
-* requirements
+* requirements.txt
 * test_library
 * python_library
 * Dockerfile

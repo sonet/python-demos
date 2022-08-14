@@ -5,6 +5,8 @@
 Create development environment that is cloud-based
 
 ### Colab Notebook
+Basically a jupyter notebook hosted by Google.
+
 
 ### Github Codespaces
 
